@@ -6,6 +6,9 @@ buttons.map(button => {
     if(display.innerText=="Enter Values"){
       display.innerText=' ';
     }
+    if(display.innerText=="Error!"){
+      display.innerText=' ';
+    }
     switch (e.target.innerText) {
       case 'C':
         display.innerText=' ';
