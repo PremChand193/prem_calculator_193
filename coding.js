@@ -3,6 +3,9 @@ let display=document.getElementById('display');
 let buttons=Array.from(document.getElementsByClassName('button'));
 buttons.map(button => {
   button.addEventListener('click', (e)=> {
+    if(display.innerText=="Enter Values"){
+      display.innerText=' ';
+    }
     switch (e.target.innerText) {
       case 'C':
         display.innerText=' ';
